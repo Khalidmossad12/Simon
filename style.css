@@ -1,0 +1,1004 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family:'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+/* Home */
+
+.home
+{
+    height: 100vh;
+    background-image: url(images/intro-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.back
+{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    z-index: 100;
+}
+
+.nav .image
+{
+    width: 15%;
+}
+
+.nav .list
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.nav .list ul
+{
+    list-style-type: none;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.list a
+{
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.list a:hover
+{
+    color: #20c997;
+}
+
+.home .parent
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .text
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.home .text h1,h2,p
+{
+    padding: 20px;
+} 
+
+.text h2
+{
+    font-size: 30px;
+}
+.text h1
+{
+    font-size: 60px;
+}
+.text p
+{
+    font-size: 30px;
+}
+
+.text button
+{
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 50px;
+    background: none;
+    color: #20c997;
+    border: solid 2px #20c997;
+    margin-top: 20px;
+    transition: .5s ease-in-out;
+}
+
+.text button:hover
+{
+    color: white;
+    background-color: #20c997;
+    cursor: pointer;
+}
+
+/* About */
+
+
+.about .know
+{
+    display: flex;
+    justify-content: center;
+}
+
+.about .know h2 {
+    padding-top: 56px;
+    font-size: 42px;
+    border-bottom: 3px solid #20c997;
+}
+
+
+.about .about-us
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.about .txt 
+{
+    width: 60%;
+    padding-left: 50px;
+}
+
+.txt h2 
+{
+    font-size: 32px;
+}
+
+.txt p
+{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about .info
+{
+    width: 30%;
+    
+}
+
+.about .info ul
+{
+    list-style-type: none;
+    position: relative;
+}
+
+.about .info ul li
+{
+    padding: 15px 0;
+}
+
+.about li a
+{
+    color: #20c997;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about .info button
+{
+    width: 35%;
+    height: 19%;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: #20c997;
+    font-size: 16px;
+    transition: .5s ease-in-out;
+}
+
+.about .info button:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.about .info .one::after {
+    content: '';
+    width: 58%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 108px;
+    left: -6px;
+}
+
+.about .info .one::before {
+    content: '';
+    width: 58%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 54px;
+    left: -6px;
+}
+
+.about .info .two::after {
+    content: '';
+    width: 58%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 159px;
+    left: -6px;
+}
+
+.num
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    color: #6c757d;
+    font-size: 40px;
+    position: relative;
+}
+
+.num h3
+{
+    text-align: center;
+}
+
+.num p
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.num2::before
+{
+    content: '';
+    width: 1px;
+    height: 70%;
+    background-color: #ccc;
+    position: absolute;
+    top: 40px;
+    left: 27%;
+}
+
+.num3::before
+{
+    content: '';
+    width: 1px;
+    height: 70%;
+    background-color: #ccc;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+}
+
+.num4::before
+{
+    content: '';
+    width: 1px;
+    height: 70%;
+    background-color: #ccc;
+    position: absolute;
+    top: 40px;
+    left: 73%;
+}
+
+/* Services */
+
+.services
+{
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.service
+{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.service h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.service::after
+{
+    content: '';
+    width: 10%;
+    height: 3px;
+    background-color: #20c997;
+    position: absolute;
+    top: 27%;
+    left: 45%;
+}
+
+.services .items
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.items .item
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .icon
+{
+    width: 12%;
+    height: 70%;
+    background-color: #FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.icon i
+{
+    text-align: center;
+    font-size: 30px;
+    color: #20c997;
+}
+
+.item .describe
+{
+    width: 83%;
+}
+
+.describe h3
+{
+    font-size: 25px;
+}
+
+.describe p
+{
+    font-size: 17px;
+    color: #4c4d4d;
+}
+
+/* Resume */
+
+.resume
+{
+    position: relative;
+}
+
+.summary
+{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.summary h2
+{
+    font-size: 45px;
+    font-weight: bold;
+    font-family:'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summary::after {
+    content: '';
+    width: 8%;
+    height: 3px;
+    background-color: #20c997;
+    position: absolute;
+    top: 12%;
+    left: 46%;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.edu
+{
+    width: 40%;
+    
+}
+
+.edu .item1
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;   
+    padding: 5px 15px;
+}
+
+.item1
+{
+    border-radius: 15px;
+}
+.item1 .range {
+    width: 20%;
+    height: 23px;
+    background-color: #20c997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+
+.exper
+{
+    width: 40%;
+}
+
+.exper .item1
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;   
+    padding: 5px 15px;
+}
+
+.item1 span
+{
+    color: #dc3545;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.item1 p
+{
+    font-size: 17px;
+    color: #4c4d4d;
+}
+.skill-parent
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-head
+{
+    width: 88%;
+}
+
+.skill-head h2
+{
+    font-size: 30px;
+}
+.skills .container
+{
+    display: flex;
+    justify-content: space-evenly ;
+}
+
+.skill-1
+{
+    width: 40%;
+}
+.bar
+{
+    padding: 10px 0;
+}
+.bar .info
+{
+   display: flex;
+   justify-content: space-between; 
+   padding: 5px 0;
+}
+
+.bar .progress-bar
+{
+    width: 100%;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bar .progress-bar .progress1
+{
+    position: absolute;
+    width: 65%;
+    height: 8px;
+    background-color: #20c997;
+}
+
+.bar .progress-bar .progress2
+{
+    position: absolute;
+    width: 95%;
+    height: 8px;
+    background-color: #20c997;
+}
+
+.bar .progress-bar .progress3
+{
+    position: absolute;
+    width: 80%;
+    height: 8px;
+    background-color: #20c997;
+}
+
+.bar .progress-bar .progress4
+{
+    position: absolute;
+    width: 70%;
+    height: 8px;
+    background-color: #20c997;
+}
+
+.bar .progress-bar .progress5
+{
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    background-color: #20c997;
+}
+
+.bar .progress-bar .progress6
+{
+    position: absolute;
+    width: 99%;
+    height: 8px;
+    background-color: #20c997;
+}
+
+.skill-2
+{
+    width: 40%;
+}
+
+.btn
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn button
+{
+    width: 15%;
+    height: 50px;
+    border-radius: 30px;
+    margin: 40px 0;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+    background-color: white;
+    font-size: 20px;
+    transition: .5s ease-in-out;
+}
+
+.btn button:hover 
+{
+    color: white;
+    background-color: #6c757d;
+    cursor: pointer;
+}
+
+
+.btn i
+{
+    color: #6c757d;
+    transition: .5s ease-in-out;
+}
+
+.btn button:hover i
+{
+    color: white;
+}
+
+/* Portfolio */
+
+.portfolio
+{
+    background-color: #f1f1f1;
+}
+
+
+.work
+{
+    display: flex;
+    justify-content: center;
+}
+
+.work h2 
+{
+    font-size: 37px;
+}
+
+.portfolio .list
+{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .list ul 
+{
+    display: flex;
+    list-style-type: none;
+}
+
+.list ul li
+{
+    padding: 0 10px;
+    font-size: 20px;
+    transition: .5s ease-in-out;
+}
+
+.list ul li:hover
+{
+    color: #20c997;
+    cursor: pointer;
+}
+
+.images
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.images .container
+{
+    width:  30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images .container .imag
+{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.images img
+{
+    width: 100%;
+    height: auto;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: .5s ease-in-out; 
+}
+
+.overlay:hover
+{
+    background-color: rgba(0, 0, 0, 0.7); 
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* client */
+
+.client
+{
+    padding:  70px 0;
+}
+.client-head
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.client-head h2
+{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.client .container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.client .container .member
+{
+    width: 40%;
+    background-color: #f1f1f1;
+    padding: 37px 33px;
+    border-radius: 20px;
+}
+
+.member .person
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.person .image
+{
+    border-radius: 50%;
+}
+
+.person img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.person h3
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.person p
+{
+    padding: 6px;
+}
+
+.paragraph p
+{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.paragraph i
+{
+    color: gold;
+}
+
+/* contact */
+
+.contact
+{
+    background-color: #f1f1f1;
+    padding: 20px 0 70px ;
+}
+
+.contact-head
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contact .contact-head h2
+{
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.contact .contact-head h2::after
+{
+    content: '';
+    width: 8%;
+    height: 3px;
+    background-color: #20c997;
+    position: absolute;
+    top: 74%;
+    left: 46%;   
+}
+
+.contact .container-contact
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contact .prnt
+{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .address
+{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.address p
+{
+    padding-left: 0;
+    color: black;
+}
+
+.address i
+{
+    font-size: 20px;
+}
+
+.address h3
+{
+    font-size: 27px;
+}
+
+.contact .send
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-head
+{
+    margin-bottom: 30px;
+}
+
+.send .send-head h3
+{
+    padding-left: 0;
+}
+
+.container-form
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.send .info 
+{
+    display: flex;
+}
+
+.send .info .name 
+{
+    width: 50%;
+}
+
+.name input
+{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.send .info .email
+{
+    width: 50%;
+}
+
+.email input
+{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea
+{
+    width: 90%;
+    margin: 40px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+::placeholder
+{
+    font-size: 17px;
+}
+
+.btn-form 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-form button 
+{
+    width: 21%;
+    height: 55px;
+    border-radius: 35px;
+    border: none;
+    background-color: #20c997;
+    color: white;
+    font-size: 18px;
+    transition: .5s ease-in-out;
+}
+
+.btn-form button:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.footer
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.footer .copy
+{
+    font-size: 18px;
+}
+
+.copy span
+{
+    color: #20c997;
+    font-weight: bold;
+}
+
+.copy-two
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.copy-two a
+{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    transition: .5s ease-in-out;
+}
+
+.copy-two a:hover
+{
+    color: #20c997;
+}
+
+.copy-two .after::after 
+{
+    content: '';
+    width: 1px;
+    height: 38px;
+    background-color: #ccc;
+    position: absolute;
+    top: 28%;
+    left: 57%;
+}
